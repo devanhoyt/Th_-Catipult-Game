@@ -4,6 +4,8 @@ import arcade
 import math
 import csv
 
+CHARACTER_SCALING = 1
+TILE_SCALING = 0.5
 
 class Engine:
     # What runs the game.  This is for everything not visible to the player (mechanicly speeking)
@@ -52,10 +54,37 @@ class Engine:
             def __init__(self, width, height, title):
                 super().__init__(width, height, title)
 
-                arcade.set_background_color(arcade.color.AMAZON)
+                arcade.set_background_color(arcade.color.WHITE_SMOKE)
 
                 # If you have sprite lists, you should create them here,
                 # and set them to None
+                self.scene = None
+
+                self.player_sprite = None
+
+           
+            #An issue is occuring when i have the following code in a seperate function, I think its having an issue passing
+            #Information between it but I'm not sure
+            #def setup(self):
+
+                self.scene = arcade.Scene()
+                self.scene.add_sprite_list("Player")
+                self.scene.add_sprite_list("Walls", use_spatial_hash=True)
+                #self.player_list = arcade.SpriteList()
+                #self.wall_list = arcade.SpriteList(use_spatial_hash=True)
+
+                image_source = ":resources:images/topdown_tanks/tank_red.png"
+                self.player_sprite = arcade.Sprite(image_source, CHARACTER_SCALING)
+                self.player_sprite.center_x = 20
+                self.player_sprite.center_y = 70
+                self.scene.add_sprite("Player", self.player_sprite)
+                #self.player_list.append(self.player_sprite)
+
+                for x in range(0,800, 25):
+                    wall = arcade.Sprite(":resources:images/topdown_tanks/tileGrass1.png", TILE_SCALING)
+                    wall.center_x = x
+                    wall.center_y = 32
+                    self.scene.add_sprite("Walls", wall)
 
             def on_draw(self):
                 """
@@ -67,6 +96,10 @@ class Engine:
                 arcade.start_render()
 
                 # Call draw() on all your sprite lists below
+                self.scene.draw()
+
+
+
 
             def on_update(self, delta_time):
 
@@ -92,3 +125,4 @@ def main():
 
 main()
 # %%
+
