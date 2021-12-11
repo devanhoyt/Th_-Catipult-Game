@@ -118,7 +118,58 @@ class TestRoom(arcade.View):
         self.create_box(game_settings.get("SCREEN_WIDTH") - 895, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 895, game_settings.get("SCREEN_HEIGHT")-460,scale=.20)
 
+    def level1(self):
+        #--- End catapult setup
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-460,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
 
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 850, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 875, game_settings.get("SCREEN_HEIGHT")* .1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 895, game_settings.get("SCREEN_HEIGHT")* .1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 850, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 875, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 895, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        #self.create_box(game_settings.get("SCREEN_WIDTH") - 850, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_objective(game_settings.get("SCREEN_WIDTH") - 850, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 875, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 895, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 895, game_settings.get("SCREEN_HEIGHT")-460,scale=.20)
+
+    def level2(self):
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")-460,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")-430,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-430,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-460,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 850, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 875, game_settings.get("SCREEN_HEIGHT")* .1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 895, game_settings.get("SCREEN_HEIGHT")* .1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 850, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+
+        self.create_objective(game_settings.get("SCREEN_WIDTH") - 850, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        
+    def level3(self):
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 875, game_settings.get("SCREEN_HEIGHT")* .1,scale=.20)
+        self.create_box(game_settings.get("SCREEN_WIDTH") - 895, game_settings.get("SCREEN_HEIGHT")* .1,scale=.20)
+
+        self.create_objective(game_settings.get("SCREEN_WIDTH") - 850, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
 
     def on_draw(self):
         arcade.start_render()
