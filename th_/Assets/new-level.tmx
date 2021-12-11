@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="70" tileheight="70" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" source="../../Applied programming/Team/Assets/Tilesets/terrain.json"/>
+ <layer id="1" name="Floor" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2D4AGYqYwAM+AA9
+  </data>
+ </layer>
+ <layer id="2" name="Castle" width="20" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhZYCeJ4oSABRArALEVDj6pIACIXYC4DogtoTSIH0SBedZAfAWIrwLxNSifUvP+gziMQMRIuXl1aObVUWAetQEAhqQNRw==
+  </data>
+ </layer>
+</map>
