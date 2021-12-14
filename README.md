@@ -14,7 +14,8 @@ The core.py file is structured into two main components, the Engine and the Inte
 - Engine: the Engine is responsible for handling all the elements that the user does not directly see.  Game objects, the Physics engine, and save/load systems all fall into this catagory.  
 
 ## Assets
-All necessary game components, images, levels and so forth are in the Assets folder which is necessary to run the game. Ensure that it is in the same location as the game file
+All necessary game components, images, levels and so forth are in the Assets folder which is necessary to run the game. Ensure that it is in the same location as the game file. 
+Take care not to change file locations within the folder.
 
 ## Catapult Game states
 ### IDLE GAME STATES
