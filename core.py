@@ -24,7 +24,7 @@ class BoxSprite(PhysicsSprite):
         self.scale = scale
 
 class Level1(arcade.View):
-
+#The first level class, call to 
     def __init__(self):
         super().__init__()
              
@@ -97,6 +97,8 @@ class Level1(arcade.View):
 
         self.create_catapult(game_settings.get("SCREEN_WIDTH")- 300,game_settings.get("SCREEN_HEIGHT")*.17,scale=.15)
         #--- End catapult setup
+        
+        #This is the actual level setup, change these create sections to alter the castle design
         self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 800, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
@@ -425,7 +427,7 @@ class Level2(arcade.View):
 
         self.create_catapult(game_settings.get("SCREEN_WIDTH")- 300,game_settings.get("SCREEN_HEIGHT")*.17,scale=.15)
         #--- End catapult setup
-
+        #This is the actual level setup, change these create sections to alter the castle design
         self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 775, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
@@ -756,6 +758,7 @@ class Level3(arcade.View):
         self.create_catapult(game_settings.get("SCREEN_WIDTH")- 300,game_settings.get("SCREEN_HEIGHT")*.17,scale=.15)
         #--- End catapult setup
 
+        #This is the actual level setup, change these create sections to alter the castle design
         self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")*.1,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-520,scale=.20)
         self.create_box(game_settings.get("SCREEN_WIDTH")- 825, game_settings.get("SCREEN_HEIGHT")-490,scale=.20)
@@ -1084,9 +1087,17 @@ def main():
         game_settings[k] = v
 
     window = arcade.Window(game_settings.get("SCREEN_WIDTH"),game_settings.get("SCREEN_HEIGHT"),game_settings.get("SCREEN_TITLE"))
-    start_view = StartView()
+    start_view = Level1()
+    start_view.setup()
     window.show_view(start_view)
-    #start_view.setup()
+    
+    """second_view = Level2()
+    second_view.setup()
+    window.show_view(second_view)"""
+    """third_view = Level3()
+    third_view.setup()
+    window.show_view(third_view)"""
+    
     arcade.run()
 
 if __name__ == "__main__":
