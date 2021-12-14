@@ -13,6 +13,8 @@ The core.py file is structured into two main components, the Engine and the Inte
 - Interface:  The interface is responsible for managing all graphical elements, allowing the user to see into the game world.  This includes the game window (the section of screen that is the game), The room (the 'location' that the game is taking place in), and the camera (the secion of the room that is displayed at any given time)
 - Engine: the Engine is responsible for handling all the elements that the user does not directly see.  Game objects, the Physics engine, and save/load systems all fall into this catagory.  
 
+## Assets
+All necessary game components, images, levels and so forth are in the Assets folder which is necessary to run the game. Ensure that it is in the same location as the game file
 
 ## Catapult Game states
 ### IDLE GAME STATES
