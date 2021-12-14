@@ -31,7 +31,7 @@ Arming: While in this state, the catapult arm will slowly wind back until it rea
 ### VIEWS
 The game is set up with arcade views to change between the different levels and screens. To change levels or screens call the view class and call the setup function if applicable. There is a start view, level 1-3 view, victory view, and gameeover view. Each level has a setup function that is called which creates all the level objects and sets them up. The starting view incorporates a login system and the game overview incorporates a retry element. The victory view continues to the next level.
 ### LEVELS
-Each level has an enemy slime(game_objective) that the player must hit to advance the game. 
+Each level has an enemy slime(game_objective) that the player must hit to advance the game. To call a level first declare the level, call the setup function of the level and then call the level.
 
 ### Other notes
 there is a varable called "arm_game_state" and this referes to either "Primed" (a rock is loaded) or 
